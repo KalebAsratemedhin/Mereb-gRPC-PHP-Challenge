@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Ping\\": "src/generated/Ping/",
+            "App\\Services\\": "src/Services/"
+
+        }
+    },
+    "require": {
+        "spiral/roadrunner": "^2024.3",
+        "spiral/roadrunner-cli": "^2.7"
+    }
+}
