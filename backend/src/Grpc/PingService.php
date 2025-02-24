@@ -8,13 +8,13 @@ use Ping\PingServiceInterface;
 use Spiral\GRPC\ContextInterface;
 use Spiral\GRPC\ServiceInterface;
 use Ping\PingRequest;
-use Ping\PingReply;
+use Ping\PingResponse;
 
 class PingService implements PingServiceInterface, ServiceInterface
 {
-    public function Ping(ContextInterface $ctx, PingRequest $request): PingReply
+    public function Ping(ContextInterface $ctx, PingRequest $request): PingResponse
     {
-        $reply = new PingReply();
+        $reply = new PingResponse();
         $reply->setMessage($request->getMessage());
 
         return $reply;

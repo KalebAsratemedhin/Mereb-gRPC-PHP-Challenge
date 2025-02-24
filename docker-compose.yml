@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "9001:9001"
+    networks:
+      - grpc_network
+
+  react_client:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - grpc_network
+    environment:
+      - VITE_GRPC_SERVER=http://localhost:8000
+
+  envoy:
+    image: envoyproxy/envoy:v1.27.0
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
+    ports:
+      - "8000:8000"
+    networks:
+      - grpc_network
+
+networks:
+  grpc_network:

@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>ping.PingReply</code>
+ * Generated from protobuf message <code>ping.PingResponse</code>
  */
-class PingReply extends \Google\Protobuf\Internal\Message
+class PingResponse extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string message = 1;</code>
