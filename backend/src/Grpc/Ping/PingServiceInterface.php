@@ -14,9 +14,9 @@ interface PingServiceInterface extends GRPC\ServiceInterface
     /**
     * @param GRPC\ContextInterface $ctx
     * @param PingRequest $in
-    * @return PingReply
+    * @return PingResponse
     *
     * @throws GRPC\Exception\InvokeException
     */
-    public function Ping(GRPC\ContextInterface $ctx, PingRequest $in): PingReply;
+    public function Ping(GRPC\ContextInterface $ctx, PingRequest $in): PingResponse;
 }

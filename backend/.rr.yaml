@@ -2,8 +2,7 @@ version: "3"
 
 grpc:
   listen: "tcp://0.0.0.0:9001"
-  proto:
-    - "../proto/ping.proto"
+  proto: ./proto/ping.proto
   workers:
     command: "php src/server.php"
     pool:
