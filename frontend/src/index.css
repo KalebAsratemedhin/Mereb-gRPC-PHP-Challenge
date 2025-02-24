@@ -66,3 +66,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.home {
+  width: 100vw;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30%;
+  justify-content: center;
+}
