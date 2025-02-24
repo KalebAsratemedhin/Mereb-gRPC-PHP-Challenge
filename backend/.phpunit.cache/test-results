@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Grpc\\PingServiceTest::testPingReturnsExpectedResponse":5},"times":{"Tests\\Grpc\\PingServiceTest::testPingReturnsExpectedResponse":0.107}}
