@@ -1,13 +1,12 @@
 {
     "autoload": {
         "psr-4": {
-            "Ping\\": "src/generated/Ping/",
-            "App\\Services\\": "src/Services/"
-
+            "Ping\\": "src/Grpc/Ping",
+            "GPBMetadata\\": "src/Grpc/GPBMetadata",
+            "App\\": "src/"
         }
     },
     "require": {
-        "spiral/roadrunner": "^2024.3",
-        "spiral/roadrunner-cli": "^2.7"
+        "spiral/php-grpc": "^1.6"
     }
 }
