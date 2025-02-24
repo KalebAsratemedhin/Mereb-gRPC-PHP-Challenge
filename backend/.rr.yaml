@@ -1,6 +1,20 @@
-version: '3'
-rpc:
-    listen: 'tcp://127.0.0.1:6001'
-server:
-    command: 'php ./src/server.php'
-    relay: pipes
+version: "3"
+
+grpc:
+  listen: "tcp://0.0.0.0:9001"
+  proto:
+    - "../proto/ping.proto"
+  workers:
+    command: "php src/server.php"
+    pool:
+      numWorkers: 4
+
+
+logs:
+  level: debug
+  mode: development
+  channels:
+    http:
+      level: info
+    grpc:
+      level: debug
