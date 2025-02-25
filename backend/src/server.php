@@ -16,6 +16,5 @@ $server = new Server(null, [
 
 $server->registerService(PingServiceInterface::class, new PingService());
 
-// Fix: Use fromGlobals() instead of create()
 $worker = new Worker(new StreamRelay(STDIN, STDOUT));
 $server->serve($worker);
