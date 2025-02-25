@@ -4,7 +4,6 @@ import { PingServiceClient } from './ping_grpc_web_pb';
 const client = new PingServiceClient('http://localhost:8000', null, null);
 
 export const pingServer = (message) => {
-  console.log("message", message, client)
   const request = new PingRequest();
   request.setMessage(message);
 
