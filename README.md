@@ -10,8 +10,8 @@ The application demonstrates a simple **Ping Service**, where a client sends a m
 ## 🛠 Technologies Used
 ### **Backend (PHP gRPC Server)**
 - PHP 8.1
-- Spiral PHP gRPC (`spiral/php-grpc`)
-- RoadRunner (`rr-grpc`)
+- Spiral PHP gRPC (`spiral/php-grpc`) 
+- RoadRunner (`rr-grpc`) (can be found at https://github.com/spiral-modules/php-grpc/releases/download/v1.6.0/rr-grpc-1.6.0-linux-amd64.tar.gz)
 - Envoy Proxy (for communication)
 - PHPUnit (for testing)
 
